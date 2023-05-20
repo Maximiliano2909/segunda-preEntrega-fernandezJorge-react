@@ -2,6 +2,7 @@ import CartWidget from '../Cartwidget/CartWidget'
 import './NavBar.css'
 import { NavLink, Link } from "react-router-dom"
 
+
 const NavBar = () => {
   const imgMarolio = "https://www.marolio.com.ar/sites/all/themes/theme1043/logo.png";
   return (
