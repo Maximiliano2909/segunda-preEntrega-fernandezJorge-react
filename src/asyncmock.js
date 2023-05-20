@@ -1,8 +1,14 @@
+import imagen from './componentes/img/foto 1.jpeg'
+import imagen2 from './componentes/img/foto 2.jpeg'
+import imagen3 from './componentes/img/foto 3.jpeg'
+import imagen4 from './componentes/img/foto 4.jpeg'
+
+
 const productos = [
-    { nombre: "picada1", precio: 500, id: "1", img: "./img/foto1.jpeg", idCat: "2" },
-    { nombre: "picada2", precio: 180, id: "2", img: "../img/foto2.jpg", idCat: "2" },
-    { nombre: "picada3", precio: 200, id: "3", img: "../img/foto3.jpg", idCat: "3" },
-    { nombre: "picada4", precio: 400, id: "4", img: "../img/foto4.jpg", idCat: "3" },
+    { nombre: "picada1", precio: 500, id: "1", img: imagen, idCat: "2" },
+    { nombre: "picada2", precio: 180, id: "2", img: imagen2, idCat: "2" },
+    { nombre: "picada3", precio: 200, id: "3", img: imagen3, idCat: "3" },
+    { nombre: "picada4", precio: 400, id: "4", img: imagen4, idCat: "3" },
 ]
 
 export const getProductos = () => {
@@ -34,3 +40,4 @@ export const getProductosPorCategoria = (idCategoria) => {
         }, 100)
     })
 }
+

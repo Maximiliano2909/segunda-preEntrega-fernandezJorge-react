@@ -1,8 +1,8 @@
-cardProducto {
-    background-color: #bcbd8b;
-    border-radius: 10px;
-    width: 15rem;
-    padding: 1rem;
+.cardProducto {
+    background-color: aqua;
+    border-radius: 8px;
+    width: 2rem;
+    padding: 8rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,8 @@ cardProducto {
 }
 
 .imgProducto {
-    width: 150px;
+    margin:2rem ;
+    width: 250px;
     object-fit: contain;
 }
 
@@ -18,7 +19,7 @@ cardProducto {
     background-color: #373d20;
     color: white;
     font-size: 1.2rem;
-    width: 8rem;
+    width: 10rem;
     border-radius: 10px;
     border: none;
 }
