@@ -31,7 +31,7 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
       <h2>Nombre: {nombre} </h2>
       <h3>Precio: {precio} </h3>
       <h3>ID: {id} </h3>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio eveniet facere maiores quo tempore quisquam! Consectetur dolores quos ducimus maiores quam quae, eveniet voluptatibus beatae, nemo cumque tempore modi?</p>
+      <p> LAS MEJORES PICADAS PARA COMPARTIR EN DFAMILIA O CON SUS AMIGOS </p>
       <img src={img} alt={nombre} />
       {
         //Acá empleamos la lógica del montaje y desmontaje de componentes: 
