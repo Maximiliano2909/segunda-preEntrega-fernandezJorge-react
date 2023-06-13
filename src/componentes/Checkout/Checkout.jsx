@@ -18,19 +18,19 @@ const Checkout = () => {
     const manejadorSubmit = (event) => {
         event.preventDefault();
 
-        //Validar que los campos esten completos: 
+
         if (!nombre || !apellido || !telefono || !email || !emailConfimarcion) {
             setError("Por favor complete los campos");
             return;
         }
 
-        //Validamos que los campos del email coincidan
+
         if (email !== emailConfimarcion) {
             setError("Los campos del email no coinciden");
             return;
         }
 
-        //Creamos el objeto de la orden: 
+
 
         const orden = {
             items: carrito.map(producto => ({
@@ -45,7 +45,7 @@ const Checkout = () => {
             email
         };
 
-        //Guardamos la orden en la base de datos: 
+
         addDoc(collection(db, "ordenes"), orden)
             .then((docRef) => {
                 setOrdenId(docRef.id);

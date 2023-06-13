@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_kEY,
   apiKey: "AIzaSyDXE1UgzmTADhyMUYJtnAP3g0gFwrNJKoU",
   authDomain: "venta-de-picadas.firebaseapp.com",
   projectId: "venta-de-picadas",

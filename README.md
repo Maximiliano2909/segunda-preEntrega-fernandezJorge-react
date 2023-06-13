@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Venta de picadas
+Este es un proyecto de ecommerce basico. La aplicacion permite ver una lista de picadas y realizar compras en linea. los productos y las ordenes de compa se almacenan en Firebase.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Tecnologias utilizadas
+- React
+- React Router
+- Firebase
 
-In the project directory, you can run:
 
-### `npm start`
+## Funcionalidades
+- Ver una lista de productos disponible
+- Agregar productos al carrito de compras
+- Ver el carrito de compras
+- Realizar una orden de compras
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalacion
 
-### `npm test`
+### Para instalar y ejecutar la aplicacion en tu maquina local, sigue los siguientes pasos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clona el repositorio a tu maquina local.
+2. Abre una terminal en el directorio del proyecto.
+3. Ejecuta el comando npm install para instalar las dependencias.
+4. Ejecuta el comando y navega a http:3000 para ver la aplicacion en accion.
 
-### `npm run build`
+## Configuracion de Firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Para utilizar Firebaseen esta aplicacion, debes seguir los siguientes 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Crea una cuenta en Firebase y crea un nuevo proyecto.
+2. En la seccion "Authentication" de Firebase, habilita e proveedor de autenticacion de correo electronico y contraseña.
+3. En la seccion "Firestore" de Firebase, crea una nueva base de datos y configura las reglas de seguridad para permitir lectura/escritura solamente a usuarios autentificados.
+4. En la seccion "Proyect settings" de Firebase, haz clic en "add app" y sigue las instrucciones para agregar una nueva aplicacion web.
+5. Copia las credenciales de Firebase y configura las variables de entorno en el archivo . env de tu proyecto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Licencia
+Este proyecto esta licenciado bajo la licencia MIT. Consulta el archivo LICENSE para obtener mas informacion.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
