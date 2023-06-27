@@ -8,6 +8,7 @@ import { CarritoContext } from '../../Contex/CarritoContext';
 
 import { useContext } from 'react';
 
+
 const ItemDetail = ({ id, nombre, precio, img, stock }) => {
   
   const [agregarCantidad, setAgregarCantidad] = useState(0);
@@ -25,11 +26,12 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
   }
 
   return (
-    <div className='contenedorItem'>
+    <div className=' container'>
+    <div className='contenedorItem' >
       <h2>Nombre: {nombre} </h2>
       <h3>Precio: {precio} </h3>
       <h3>ID: {id} </h3>
-      <p> LAS MEJORES PICADAS PARA COMPARTIR EN DFAMILIA O CON SUS AMIGOS </p>
+      <p> LAS MEJORES PICADAS PARA COMPARTIR EN FAMILIA O CON SUS AMIGOS </p>
       <img src={img} alt={nombre} />
       {
         
@@ -38,6 +40,8 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
         agregarCantidad > 0 ? (<Link className='miBtn' to="/cart"> Terminar Compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
       }
     </div>
+    </div>
   )
 }
+
 export default ItemDetail

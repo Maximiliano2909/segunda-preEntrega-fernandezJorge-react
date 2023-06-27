@@ -1,4 +1,4 @@
-
+import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
 
   
     return (
-        <div>
+        <div className='contenedorItem'>
             <ItemDetail {...producto} />
         </div>
     )
